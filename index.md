@@ -2,9 +2,11 @@
 
 <script>
     function calc() {
-        const data = JSON.parse(document.getElementById("inputJson").value);
+        document.getElementById("error").innerText = "";
 
         try {
+            const data = JSON.parse(document.getElementById("inputJson").value);
+            
             validateInput(data);
         } catch (error) {
             document.getElementById("error").innerText = error;
@@ -67,7 +69,7 @@
             "name": "ISSUE 1",
             "users": {
                 "ivancea": 2,
-                "user2" 5
+                "user2": 5
             }
         },
         {
@@ -77,7 +79,7 @@
             }
         },
         {
-            "name": "ISSUE 3"
+            "name": "ISSUE 3",
             "users": {
                 "ivancea": 4,
                 "user2": 4
