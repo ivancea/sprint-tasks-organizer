@@ -86,6 +86,6 @@
     ]
 }
 </textarea>
-<button onClick="calc">Calc</button>
+<button onClick="calc()">Calc</button>
 
 <div id="error" style="color: red;"></div>
